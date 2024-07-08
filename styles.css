@@ -10,18 +10,28 @@ header {
     background-color: #333;
     color: white;
     padding: 1em 0;
-    position: fixed;
-    top: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
     z-index: 1000;
+    position: fixed; /* Hacer que el header sea fijo */
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 header .logo img {
     height: 50px;
-    margin-left: 20px;
+    margin: 0 auto; /* Centra el logo horizontalmente */
+    display: block; /* Para asegurar el centrado */
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 0.5em 0;
+    text-align: center;
+    position: relative; /* Posición relativa para ajustar con JavaScript */
+    z-index: 1001; /* Colocar por encima del header fijo */
 }
 
 nav ul {
@@ -44,12 +54,13 @@ nav ul li a {
 }
 
 main {
-    padding-top: 70px; /* Para que el contenido no quede detrás del menú fijo */
     padding: 2em;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+    padding-top: 120px; /* Ajustar el espacio superior para que no se superponga con el menú */
 }
 
 section {
-    margin-bottom: 2em;
+    margin-bottom: 4em; /* Espacio adicional entre secciones */
 }
 
 section h2 {
@@ -77,24 +88,32 @@ footer {
     width: 100%;
 }
 
-/* Estilos Responsivos */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    nav ul li {
-        margin: 0.5em 0;
-    }
-
-    main {
-        padding-top: 120px; /* Aumentar el espacio superior para dispositivos móviles */
-    }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2em;
 }
+
+th, td {
+    padding: 1em;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Estilos para las imágenes dentro de las tablas */
+table img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+
+
+
 
