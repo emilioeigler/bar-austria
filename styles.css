@@ -90,8 +90,10 @@ footer {
 
 table {
     width: 100%;
+	max-width: 500px;
     border-collapse: collapse;
     margin-bottom: 2em;
+	 margin: 0 auto 2em;
 }
 
 th, td {
@@ -108,6 +110,8 @@ th {
 /* Estilos para las imágenes dentro de las tablas */
 table img {
     max-width: 100px;
+	width: 80%; /* Ajusta este valor según sea necesario */
+
     height: auto;
     display: block;
     margin: 0 auto; /* Centra la imagen horizontalmente */
