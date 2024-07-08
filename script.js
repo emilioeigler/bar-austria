@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             var targetId = this.getAttribute('href').substring(1); // Obtener el ID del elemento objetivo
             var targetElement = document.getElementById(targetId);
-            var offset = 180; // Ajustar este valor según sea necesario
+            var offset = 160; // Ajustar este valor según sea necesario
             
             if (targetElement) {
                 var targetPosition = targetElement.offsetTop - offset;
