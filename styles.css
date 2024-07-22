@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
@@ -95,12 +95,39 @@ table {
     border-collapse: collapse;
     margin-bottom: 2em;
 	 margin: 0 auto 2em;
+	border-bottom: 3px solid #ddd;
 }
+.left-align {
+            text-align: left;
+
+        }
+        .right-align {
+            text-align: right;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+ .circle {
+            display: inline-block;
+            width: 80px; /* Ajusta el tamaño del círculo */
+            height: 80px; /* Ajusta el tamaño del círculo */
+            border-radius: 50%;
+            border: 0px solid black; /* Ajusta el grosor y color del borde del círculo */
+	 		background-color: coral;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+ .min-height {
+            min-height: 200%; /* Ajusta la altura mínima de la celda */
+
+            align-items: center;
+        }
 
 th, td {
     padding: 1em;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 0px solid #ddd;
 }
 
 th {
@@ -108,10 +135,11 @@ th {
     font-weight: bold;
 }
 
+
 /* Estilos para las imágenes dentro de las tablas */
 table img {
-    max-width: 100px;
-	width: 80%; /* Ajusta este valor según sea necesario */
+    max-width: 100%;
+	width: 100%; /* Ajusta este valor según sea necesario */
 
     height: auto;
     display: block;
